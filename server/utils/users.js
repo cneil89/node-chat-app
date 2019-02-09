@@ -1,14 +1,3 @@
-[{
-   id:'asdf',
-   name: 'Colin',
-   room: 'The Office Fans'
-}]
-
-// addUser(id, name, room);
-// removeUser(id);
-// getUser(id);
-// getUserList(room)
-
 class Users {
    constructor () {
       this.users = [];
@@ -38,27 +27,4 @@ class Users {
    }
 }
 
-var users = new Users();
-var me = users.addUser(1,'Colin','test');
-users.addUser(2,'Mike','test');
-console.log(users.users);
-console.log(users.removeUser(3));
-console.log(users.users);
-var findUser = users.getUser(2);
-console.log('found user:   ', findUser);
-
 module.exports = {Users};
-
-// class Person {
-//    constructor (name, age) {
-//       this.name = name;
-//       this.age = age;
-//    }
-//    getUserDescription () {
-//       return `${this.name} is ${this.age} years old.`;
-//    }
-// }
-
-// var me = new Person('Colin', 29);
-
-// console.log(me.getUserDescription());
